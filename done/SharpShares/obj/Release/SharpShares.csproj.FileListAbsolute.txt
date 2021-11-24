@@ -1,0 +1,5 @@
+D:\a\rtt-payloads\rtt-payloads\out\SharpShares.dll.config
+D:\a\rtt-payloads\rtt-payloads\out\SharpShares.dll
+D:\a\rtt-payloads\rtt-payloads\todo\SharpShares\obj\Release\SharpShares.csproj.AssemblyReference.cache
+D:\a\rtt-payloads\rtt-payloads\todo\SharpShares\obj\Release\SharpShares.csproj.CoreCompileInputs.cache
+D:\a\rtt-payloads\rtt-payloads\todo\SharpShares\obj\Release\SharpShares.dll

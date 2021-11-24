@@ -1,0 +1,5 @@
+D:\a\rtt-payloads\rtt-payloads\out\Sharp-SMBExec.dll.config
+D:\a\rtt-payloads\rtt-payloads\out\Sharp-SMBExec.dll
+D:\a\rtt-payloads\rtt-payloads\todo\Sharp-SMBExec\SharpInvoke-SMBExec\obj\Release\SharpInvoke-SMBExec.csproj.AssemblyReference.cache
+D:\a\rtt-payloads\rtt-payloads\todo\Sharp-SMBExec\SharpInvoke-SMBExec\obj\Release\SharpInvoke-SMBExec.csproj.CoreCompileInputs.cache
+D:\a\rtt-payloads\rtt-payloads\todo\Sharp-SMBExec\SharpInvoke-SMBExec\obj\Release\Sharp-SMBExec.dll

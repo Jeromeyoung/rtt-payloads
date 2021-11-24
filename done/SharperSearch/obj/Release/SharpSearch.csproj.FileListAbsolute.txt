@@ -1,0 +1,5 @@
+D:\a\rtt-payloads\rtt-payloads\out\SharpSearch.dll.config
+D:\a\rtt-payloads\rtt-payloads\out\SharpSearch.dll
+D:\a\rtt-payloads\rtt-payloads\todo\SharperSearch\obj\Release\SharpSearch.csproj.AssemblyReference.cache
+D:\a\rtt-payloads\rtt-payloads\todo\SharperSearch\obj\Release\SharpSearch.csproj.CoreCompileInputs.cache
+D:\a\rtt-payloads\rtt-payloads\todo\SharperSearch\obj\Release\SharpSearch.dll

@@ -1,0 +1,2 @@
+D:\a\rtt-payloads\rtt-payloads\todo\SharpKeylogger\keylogger\keylogger\obj\Release\keylogger.csproj.AssemblyReference.cache
+D:\a\rtt-payloads\rtt-payloads\todo\SharpKeylogger\keylogger\keylogger\obj\Release\keylogger.csproj.CoreCompileInputs.cache

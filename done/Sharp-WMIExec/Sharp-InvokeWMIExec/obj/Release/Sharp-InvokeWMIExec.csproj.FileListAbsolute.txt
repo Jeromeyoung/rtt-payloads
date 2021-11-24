@@ -1,0 +1,5 @@
+D:\a\rtt-payloads\rtt-payloads\out\Sharp-WMIExec.dll.config
+D:\a\rtt-payloads\rtt-payloads\out\Sharp-WMIExec.dll
+D:\a\rtt-payloads\rtt-payloads\todo\Sharp-WMIExec\Sharp-InvokeWMIExec\obj\Release\Sharp-InvokeWMIExec.csproj.AssemblyReference.cache
+D:\a\rtt-payloads\rtt-payloads\todo\Sharp-WMIExec\Sharp-InvokeWMIExec\obj\Release\Sharp-InvokeWMIExec.csproj.CoreCompileInputs.cache
+D:\a\rtt-payloads\rtt-payloads\todo\Sharp-WMIExec\Sharp-InvokeWMIExec\obj\Release\Sharp-WMIExec.dll

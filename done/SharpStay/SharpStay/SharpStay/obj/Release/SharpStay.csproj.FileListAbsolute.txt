@@ -1,0 +1,7 @@
+D:\a\rtt-payloads\rtt-payloads\out\SharpStay.dll
+D:\a\rtt-payloads\rtt-payloads\todo\SharpStay\SharpStay\SharpStay\obj\Release\SharpStay.csproj.AssemblyReference.cache
+D:\a\rtt-payloads\rtt-payloads\todo\SharpStay\SharpStay\SharpStay\obj\Release\Interop.IWshRuntimeLibrary.dll
+D:\a\rtt-payloads\rtt-payloads\todo\SharpStay\SharpStay\SharpStay\obj\Release\Interop.TaskScheduler.dll
+D:\a\rtt-payloads\rtt-payloads\todo\SharpStay\SharpStay\SharpStay\obj\Release\SharpStay.csproj.ResolveComReference.cache
+D:\a\rtt-payloads\rtt-payloads\todo\SharpStay\SharpStay\SharpStay\obj\Release\SharpStay.csproj.CoreCompileInputs.cache
+D:\a\rtt-payloads\rtt-payloads\todo\SharpStay\SharpStay\SharpStay\obj\Release\SharpStay.dll

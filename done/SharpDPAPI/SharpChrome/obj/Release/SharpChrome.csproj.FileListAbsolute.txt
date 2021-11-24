@@ -1,0 +1,2 @@
+D:\a\rtt-payloads\rtt-payloads\todo\SharpDPAPI\SharpChrome\obj\Release\SharpChrome.csproj.AssemblyReference.cache
+D:\a\rtt-payloads\rtt-payloads\todo\SharpDPAPI\SharpChrome\obj\Release\SharpChrome.csproj.CoreCompileInputs.cache

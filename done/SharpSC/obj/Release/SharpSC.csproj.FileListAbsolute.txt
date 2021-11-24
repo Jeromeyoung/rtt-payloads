@@ -1,0 +1,4 @@
+D:\a\rtt-payloads\rtt-payloads\out\SharpSC.dll
+D:\a\rtt-payloads\rtt-payloads\todo\SharpSC\obj\Release\SharpSC.csproj.AssemblyReference.cache
+D:\a\rtt-payloads\rtt-payloads\todo\SharpSC\obj\Release\SharpSC.csproj.CoreCompileInputs.cache
+D:\a\rtt-payloads\rtt-payloads\todo\SharpSC\obj\Release\SharpSC.dll

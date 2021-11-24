@@ -1,0 +1,12 @@
+C:\Users\Administrator\source\repos\SharpDomainSpraty\SharpDomainSpraty\obj\Release\SharpDomainSpray.csprojAssemblyReference.cache
+C:\Users\Administrator\source\repos\SharpDomainSpraty\SharpDomainSpraty\obj\Release\SharpDomainSpray.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\SharpDomainSpraty\SharpDomainSpraty\bin\Release\SharpDomainSpray.exe.config
+C:\Users\Administrator\source\repos\SharpDomainSpraty\SharpDomainSpraty\bin\Release\SharpDomainSpray.exe
+C:\Users\Administrator\source\repos\SharpDomainSpraty\SharpDomainSpraty\bin\Release\SharpDomainSpray.pdb
+C:\Users\Administrator\source\repos\SharpDomainSpraty\SharpDomainSpraty\obj\Release\SharpDomainSpray.exe
+C:\Users\Administrator\source\repos\SharpDomainSpraty\SharpDomainSpraty\obj\Release\SharpDomainSpray.pdb
+D:\a\rtt-payloads\rtt-payloads\out\SharpDomainSpray.dll.config
+D:\a\rtt-payloads\rtt-payloads\out\SharpDomainSpray.dll
+D:\a\rtt-payloads\rtt-payloads\todo\SharpDomainSpray\obj\Release\SharpDomainSpray.csproj.AssemblyReference.cache
+D:\a\rtt-payloads\rtt-payloads\todo\SharpDomainSpray\obj\Release\SharpDomainSpray.csproj.CoreCompileInputs.cache
+D:\a\rtt-payloads\rtt-payloads\todo\SharpDomainSpray\obj\Release\SharpDomainSpray.dll

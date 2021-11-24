@@ -1,0 +1,8 @@
+D:\a\rtt-payloads\rtt-payloads\out\SharpRDP.dll.config
+D:\a\rtt-payloads\rtt-payloads\out\SharpRDP.dll
+D:\a\rtt-payloads\rtt-payloads\todo\SharpRDP\SharpRDP\SharpRDP\obj\Release\SharpRDP.csproj.AssemblyReference.cache
+D:\a\rtt-payloads\rtt-payloads\todo\SharpRDP\SharpRDP\SharpRDP\obj\Release\Interop.MSTSCLib.dll
+D:\a\rtt-payloads\rtt-payloads\todo\SharpRDP\SharpRDP\SharpRDP\obj\Release\SharpRDP.csproj.ResolveComReference.cache
+D:\a\rtt-payloads\rtt-payloads\todo\SharpRDP\SharpRDP\SharpRDP\obj\Release\SharpRDP.csproj.CoreCompileInputs.cache
+D:\a\rtt-payloads\rtt-payloads\todo\SharpRDP\SharpRDP\SharpRDP\obj\Release\SharpRDP.csproj.CopyComplete
+D:\a\rtt-payloads\rtt-payloads\todo\SharpRDP\SharpRDP\SharpRDP\obj\Release\SharpRDP.dll
