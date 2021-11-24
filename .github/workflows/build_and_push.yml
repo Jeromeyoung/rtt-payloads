@@ -32,7 +32,7 @@ jobs:
 
      - name: execute py script
        run: |
-         python ..\add_blob.py
+         python ../add_blob.py
 
      - name: Commit & Push changes
        uses: actions-js/push@master
@@ -59,6 +59,7 @@ jobs:
     
     - name: Delete .config dlls in OUT directory
       run: | # in effort to keep repo slim
+        ls ../out
         (Get-ChildItem -Path ..\out).Name | ForEach-Object {Remove-Item -Path ..\out\* -Exclude *.dll}
     
     - name: Commit OUT directory
