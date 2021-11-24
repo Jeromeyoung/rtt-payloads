@@ -1,5 +1,0 @@
-C:\Users\John\source\repos\SharpClipboard\SharpClipboard\bin\Release\SharpClipboard.exe.config
-C:\Users\John\source\repos\SharpClipboard\SharpClipboard\bin\Release\SharpClipboard.exe
-C:\Users\John\source\repos\SharpClipboard\SharpClipboard\obj\Release\SharpClipboard.csprojAssemblyReference.cache
-C:\Users\John\source\repos\SharpClipboard\SharpClipboard\obj\Release\SharpClipboard.csproj.CoreCompileInputs.cache
-C:\Users\John\source\repos\SharpClipboard\SharpClipboard\obj\Release\SharpClipboard.exe
