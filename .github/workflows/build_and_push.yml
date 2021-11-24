@@ -67,7 +67,6 @@ jobs:
     - name: Delete .config dlls in OUT directory
       working-directory: out
       run: | # in effort to keep repo slim
-        ls 
         Remove-Item *.config
         Remove-Item *.xml
     
@@ -78,16 +77,16 @@ jobs:
          commit_user_name: workflow_bot
          repository: out
          
-    - name: Move Solution from TODO to DONE on completion
-      run: |
-        (gci -Directory -Path .).Name | ForEach-Object{ Move-Item -Path $_ -Destination ../done/}
-  
     - name: Delete OBJ & BIN in completed solutions
       working-directory: todo
       run: | # in effort to keep repo slim
         (Get-ChildItem -Directory -Path .).Name | ForEach-Object {Remove-Item -Path $_/$_/obj -Recurse} -ErrorAction SilentlyContinue
         (Get-ChildItem -Directory -Path .).Name | ForEach-Object {Remove-Item -Path $_/$_/bin -Recurse} -ErrorAction SilentlyContinue
         (Get-ChildItem -Directory -Path .).Name | ForEach-Object {Remove-Item -Path $_/.vs -Recurse} -ErrorAction SilentlyContinue
+        
+    - name: Move Solution from TODO to DONE on completion
+      run: |
+        (gci -Directory -Path .).Name | ForEach-Object{ Move-Item -Path $_ -Destination ../done/}
         
     - name: Commit DONE directory
       uses: stefanzweifel/git-auto-commit-action@v4
