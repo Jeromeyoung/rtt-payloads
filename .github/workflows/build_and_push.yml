@@ -70,7 +70,8 @@ jobs:
     - name: Delete .config dlls in OUT directory
       run: | # in effort to keep repo slim
         ls ../out
-        (Get-ChildItem -Path ../out).Name | ForEach-Object {Remove-Item -Path ../out/* -Exclude *.dll}
+        #(Get-ChildItem -Path ../out).Name | ForEach-Object {Remove-Item -Path ../out/* -Exclude *.dll}
+        Remove-Item -Path ../out/* -Exclude *.dll
     
     - name: Commit OUT directory
       uses: stefanzweifel/git-auto-commit-action@v4
@@ -81,7 +82,7 @@ jobs:
          
     - name: Move Solution from TODO to DONE on completion
       run: |
-        (gci -Directory -Path .).Name | ForEach-Object{ Move-Item -Path $_ -Destination ..\done\}
+        (gci -Directory -Path .).Name | ForEach-Object{ Move-Item -Path $_ -Destination ../done/}
   
     - name: Delete OBJ & BIN in completed solutions
       run: | # in effort to keep repo slim
