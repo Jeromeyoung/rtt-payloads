@@ -18,7 +18,7 @@ defaults:
 jobs:
 
 
-  try_me:
+  Build_DLLs:
     runs-on:
       windows-latest
     steps:
@@ -70,8 +70,8 @@ jobs:
          commit_user_name: workflow_bot
          repository: todo
 
-  push-to-s3:
-    needs: try_me
+  Push_to_S3:
+    needs: Build_DLLs
     runs-on: ubuntu-latest
     steps:
     - name: checkout
