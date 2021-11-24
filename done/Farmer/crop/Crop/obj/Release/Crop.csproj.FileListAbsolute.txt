@@ -1,0 +1,7 @@
+D:\a\rtt-payloads\rtt-payloads\out\Crop.dll.config
+D:\a\rtt-payloads\rtt-payloads\out\Crop.dll
+D:\a\rtt-payloads\rtt-payloads\todo\Farmer\crop\Crop\obj\Release\Crop.csproj.AssemblyReference.cache
+D:\a\rtt-payloads\rtt-payloads\todo\Farmer\crop\Crop\obj\Release\Interop.Shell32.dll
+D:\a\rtt-payloads\rtt-payloads\todo\Farmer\crop\Crop\obj\Release\Crop.csproj.ResolveComReference.cache
+D:\a\rtt-payloads\rtt-payloads\todo\Farmer\crop\Crop\obj\Release\Crop.csproj.CoreCompileInputs.cache
+D:\a\rtt-payloads\rtt-payloads\todo\Farmer\crop\Crop\obj\Release\Crop.dll

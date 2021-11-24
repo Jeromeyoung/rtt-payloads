@@ -1,0 +1,7 @@
+D:\a\rtt-payloads\rtt-payloads\out\Fertiliser.dll.config
+D:\a\rtt-payloads\rtt-payloads\out\Fertiliser.dll
+D:\a\rtt-payloads\rtt-payloads\todo\Farmer\fertiliser\Fertiliser\obj\Release\Fertiliser.csproj.AssemblyReference.cache
+D:\a\rtt-payloads\rtt-payloads\todo\Farmer\fertiliser\Fertiliser\obj\Release\Fertiliser.csproj.CoreCompileInputs.cache
+D:\a\rtt-payloads\rtt-payloads\todo\Farmer\fertiliser\Fertiliser\obj\Release\Fertiliser.csproj.Fody.CopyLocal.cache
+D:\a\rtt-payloads\rtt-payloads\todo\Farmer\fertiliser\Fertiliser\obj\Release\Fertiliser.csproj.CopyComplete
+D:\a\rtt-payloads\rtt-payloads\todo\Farmer\fertiliser\Fertiliser\obj\Release\Fertiliser.dll
