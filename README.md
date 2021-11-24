@@ -17,5 +17,9 @@ This is where we build .NET payloads and have them ready for execution for RTT
 ## Things to condsider
 When uploading a solution, the .SLN as well as a PROGRAM.CS file must exist.
 
-theres more caveats... - tibi
+You have to drop the actual files, you can't just link another project. Don't work that way brother.
+
+If there is nothing in the **TODO**, the pipeline will fail if you run it manually.
+
+there are more caveats... - tibi
 to be added later
