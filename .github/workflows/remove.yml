@@ -32,9 +32,8 @@ jobs:
    
     
     - name: Delete .config dlls in OUT directory
+      working-directory: out
       run: | # in effort to keep repo slim
         ls ../out
         #(Get-ChildItem -Path ../out).Name | ForEach-Object {Remove-Item -Path ../out/* -Exclude *.dll}
-        pwd
-        cd ../out
         Remove-Item * -Exclude *.dll
