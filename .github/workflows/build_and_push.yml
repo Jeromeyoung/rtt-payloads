@@ -70,7 +70,7 @@ jobs:
     - name: Delete .config dlls in OUT directory
       run: | # in effort to keep repo slim
         ls ../out
-        (Get-ChildItem -Path ../out).Name | ForEach-Object {Remove-Item -Path ..\out\* -Exclude *.dll}
+        (Get-ChildItem -Path ../out).Name | ForEach-Object {Remove-Item -Path ../out/* -Exclude *.dll}
     
     - name: Commit OUT directory
       uses: stefanzweifel/git-auto-commit-action@v4
