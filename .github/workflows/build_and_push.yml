@@ -57,6 +57,16 @@ jobs:
       run: |
         Get-ChildItem -Path . -Include "*.sln" -Recurse | %{nuget restore $_; msbuild $_ "/p:OutputType=Library;DebugType=none;DebugSymbols=false;PreferredToolArchitecture=x64;Configuration=Release;NoWin32Manifest=true,OutputPath=$(pwd)/../out";}
     
+    - name: Commit OUT directory
+      uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+         commit_message: "New DLLs here + .config files"
+         commit_user_name: workflow_bot
+         repository: out
+    
+    - name: Check Out
+      uses: actions/checkout@v2.3.5
+    
     - name: Delete .config dlls in OUT directory
       run: | # in effort to keep repo slim
         ls ../out
