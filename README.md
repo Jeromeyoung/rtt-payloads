@@ -1,6 +1,7 @@
 # rtt-payloads
 Red Team Toolkit PIPELINE :rocket:
 
+This is where we build .NET payloads and have them ready for execution for RTT
 
 ## How it works
 
