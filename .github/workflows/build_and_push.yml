@@ -1,0 +1,88 @@
+name: Build and Push
+
+# Controls when the action will run. Workflow runs when manually triggered using the UI
+# or API.
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'todo/**'
+      
+defaults:
+  run:
+    working-directory: todo
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+
+
+  try_me:
+    runs-on:
+      windows-latest
+    steps:
+    - name: Setup MSBuild Path
+      uses: microsoft/setup-msbuild@v1.0.2
+      
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v1.0.5
+      
+    - name: Check Out
+      uses: actions/checkout@v2.3.5
+   
+    - name: Build SLN file and put output in OUT directory
+      run: |
+        Get-ChildItem -Path . -Include "*.sln" -Recurse | %{nuget restore $_; msbuild $_ "/p:OutputType=Library;DebugType=none;DebugSymbols=false;PreferredToolArchitecture=x64;Configuration=Release;NoWin32Manifest=true,OutputPath=$(pwd)/../out";}
+    
+    - name: Delete .config dlls in OUT directory
+      run: | # in effort to keep repo slim
+        (gci -Path ..\out).Name | ForEach-Object {Remove-Item -Path ..\out\* -Exclude *.dll}
+    
+    - name: Commit OUT directory
+      uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+         commit_message: "[Bot] New DLLs here"
+         commit_user_name: workflow_bot
+         repository: out
+         
+    - name: Move Solution from TODO to DONE on completion
+      run: |
+        (gci -Directory -Path .).Name | ForEach-Object{ Move-Item -Path $_ -Destination ..\done\}
+  
+    - name: Delete OBJ & BIN in completed solutions
+      run: | # in effort to keep repo slim
+        (gci -Directory -Path .).Name | ForEach-Object {Remove-Item -Path $_\$_\obj -Recurse} -ErrorAction SilentlyContinue
+        (gci -Directory -Path .).Name | ForEach-Object {Remove-Item -Path $_\$_\bin -Recurse} -ErrorAction SilentlyContinue
+        (gci -Directory -Path .).Name | ForEach-Object {Remove-Item -Path $_\.vs -Recurse} -ErrorAction SilentlyContinue
+        
+    - name: Commit DONE directory
+      uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+         commit_message: "[Bot] Solution has been processed and now lives here."
+         commit_user_name: workflow_bot
+         repository: done
+
+    - name: Commit TODO directory
+      uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+         commit_message: "[Bot] Solution has been processed and removed."
+         commit_user_name: workflow_bot
+         repository: todo
+
+  push-to-s3:
+    needs: try_me
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout
+      uses: actions/checkout@master
+    - name: s3 push
+      uses: jakejarvis/s3-sync-action@master
+      with:
+        args: --acl public-read --follow-symlinks --delete
+      env:
+        AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        AWS_REGION: 'us-east-2'   # optional: defaults to us-east-1
+        SOURCE_DIR: 'out'
