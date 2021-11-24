@@ -70,7 +70,7 @@ jobs:
     - name: Delete .config dlls in OUT directory
       run: | # in effort to keep repo slim
         ls ../out
-        (Get-ChildItem -Path ..\out).Name | ForEach-Object {Remove-Item -Path ..\out\* -Exclude *.dll}
+        (Get-ChildItem -Path ../out).Name | ForEach-Object {Remove-Item -Path ..\out\* -Exclude *.dll}
     
     - name: Commit OUT directory
       uses: stefanzweifel/git-auto-commit-action@v4
@@ -85,9 +85,9 @@ jobs:
   
     - name: Delete OBJ & BIN in completed solutions
       run: | # in effort to keep repo slim
-        (Get-ChildItem -Directory -Path .).Name | ForEach-Object {Remove-Item -Path $_\$_\obj -Recurse} -ErrorAction SilentlyContinue
-        (Get-ChildItem -Directory -Path .).Name | ForEach-Object {Remove-Item -Path $_\$_\bin -Recurse} -ErrorAction SilentlyContinue
-        (Get-ChildItem -Directory -Path .).Name | ForEach-Object {Remove-Item -Path $_\.vs -Recurse} -ErrorAction SilentlyContinue
+        (Get-ChildItem -Directory -Path .).Name | ForEach-Object {Remove-Item -Path $_/$_/obj -Recurse} -ErrorAction SilentlyContinue
+        (Get-ChildItem -Directory -Path .).Name | ForEach-Object {Remove-Item -Path $_/$_/bin -Recurse} -ErrorAction SilentlyContinue
+        (Get-ChildItem -Directory -Path .).Name | ForEach-Object {Remove-Item -Path $_/.vs -Recurse} -ErrorAction SilentlyContinue
         
     - name: Commit DONE directory
       uses: stefanzweifel/git-auto-commit-action@v4
