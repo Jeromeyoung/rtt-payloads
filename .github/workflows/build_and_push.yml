@@ -64,14 +64,12 @@ jobs:
          commit_user_name: workflow_bot
          repository: out
     
-   # - name: Check Out
-   #   uses: actions/checkout@v2.3.5
-    
     - name: Delete .config dlls in OUT directory
+      working-directory: out
       run: | # in effort to keep repo slim
-        ls ../out
-        #(Get-ChildItem -Path ../out).Name | ForEach-Object {Remove-Item -Path ../out/* -Exclude *.dll}
-        Remove-Item -Path ../out/* -Exclude *.dll
+        ls 
+        Remove-Item *.config
+        Remove-Item *.xml
     
     - name: Commit OUT directory
       uses: stefanzweifel/git-auto-commit-action@v4
@@ -85,6 +83,7 @@ jobs:
         (gci -Directory -Path .).Name | ForEach-Object{ Move-Item -Path $_ -Destination ../done/}
   
     - name: Delete OBJ & BIN in completed solutions
+      working-directory: todo
       run: | # in effort to keep repo slim
         (Get-ChildItem -Directory -Path .).Name | ForEach-Object {Remove-Item -Path $_/$_/obj -Recurse} -ErrorAction SilentlyContinue
         (Get-ChildItem -Directory -Path .).Name | ForEach-Object {Remove-Item -Path $_/$_/bin -Recurse} -ErrorAction SilentlyContinue
