@@ -1,6 +1,0 @@
-C:\Users\Alessandro Nava\Desktop\keylogger\keylogger\bin\Debug\keylogger.exe.config
-C:\Users\Alessandro Nava\Desktop\keylogger\keylogger\obj\Debug\keylogger.csprojResolveAssemblyReference.cache
-C:\Users\Alessandro Nava\Desktop\keylogger\keylogger\bin\Debug\keylogger.exe
-C:\Users\Alessandro Nava\Desktop\keylogger\keylogger\bin\Debug\keylogger.pdb
-C:\Users\Alessandro Nava\Desktop\keylogger\keylogger\obj\Debug\keylogger.exe
-C:\Users\Alessandro Nava\Desktop\keylogger\keylogger\obj\Debug\keylogger.pdb
