@@ -86,7 +86,7 @@ jobs:
         
     - name: Move Solution from TODO to DONE on completion
       run: |
-        (Get-ChildItem -Directory -Path .).Name | ForEach-Object{ Move-Item -Path $_ -Destination ../done/}
+        (Get-ChildItem -Directory -Path .).Name | ForEach-Object{ Move-Item -Path $_ -Destination ../done/ -ErrorAction SilentlyContinue}
         
     - name: Commit DONE directory
       uses: stefanzweifel/git-auto-commit-action@v4
