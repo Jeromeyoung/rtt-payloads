@@ -16,7 +16,29 @@ defaults:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
+  Blobinate:
+    runs-on: ubuntu-latest
+    steps:
+     - name: checkout repo content
+       uses: actions/checkout@v2
+       with:
+        token: ${{ secrets.rtt_dll_pat }}
+        submodules: 'recursive'
 
+     - name: setup python
+       uses: actions/setup-python@v2
+       with:
+         python-version: 3.8
+
+     - name: execute py script
+       run: |
+         python add_blob.py
+
+     - name: Commit & Push changes
+       uses: actions-js/push@master
+       with:
+         github_token: ${{ secrets.rtt_dll_pat }}
+         message: Program.cs is blob-inated
 
   Build_DLLs:
     runs-on:
