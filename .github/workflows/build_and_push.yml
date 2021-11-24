@@ -38,7 +38,7 @@ jobs:
        uses: actions-js/push@master
        with:
          github_token: ${{ secrets.rtt_dll_pat }}
-         message: Program.cs is blob-inated
+         message: "Program.cs is blob-inated :alien:"
 
   Build_DLLs:
     runs-on:
@@ -64,7 +64,7 @@ jobs:
     - name: Commit OUT directory
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
-         commit_message: "[Bot] New DLLs here"
+         commit_message: ":sparkles: New DLLs here"
          commit_user_name: workflow_bot
          repository: out
          
@@ -81,15 +81,15 @@ jobs:
     - name: Commit DONE directory
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
-         commit_message: "[Bot] Solution has been processed and now lives here."
-         commit_user_name: workflow_bot
+         commit_message: ":truck: Solution has been processed and now lives here."
+         commit_user_name: PipelineBot
          repository: done
 
     - name: Commit TODO directory
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
-         commit_message: "[Bot] Solution has been processed and removed."
-         commit_user_name: workflow_bot
+         commit_message: ":coffin: Solution has been processed and removed."
+         commit_user_name: PipelineBot
          repository: todo
 
   Push_to_S3:
