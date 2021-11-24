@@ -1,0 +1,38 @@
+name: remove others
+
+# Controls when the action will run. Workflow runs when manually triggered using the UI
+# or API.
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'todo/**'
+      
+defaults:
+  run:
+    working-directory: todo
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+
+  Build_DLLs:
+    runs-on:
+      windows-latest
+    steps:
+    - name: Setup MSBuild Path
+      uses: microsoft/setup-msbuild@v1.0.2
+      
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v1.0.5
+      
+    - name: Check Out
+      uses: actions/checkout@v2.3.5
+   
+    
+    - name: Delete .config dlls in OUT directory
+      run: | # in effort to keep repo slim
+        ls ../out
+        #(Get-ChildItem -Path ../out).Name | ForEach-Object {Remove-Item -Path ../out/* -Exclude *.dll}
+        Remove-Item -Path ../out/* -Exclude *.dll
